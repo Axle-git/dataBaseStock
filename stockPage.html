@@ -8,15 +8,42 @@
     <meta name="description" content="StartScreen">
     <meta name="author" content="Steven Jacobs">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+    <link rel="stylesheet" href="css/styles.css?v=1.0" >
+    <script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
 <!--<img src="" alt="Stock Image">
 -->
+    <form action="info.php" method="get">
+        Stock Symbol:<input type="text" name="symbol"><br>
+        Quantity: <input type="text" name="qty"><br>
+        Trade Price: <input type="text" name="tradePrice"><br>
+        Date Opened: <input type="date" name="openDate"><br>
+        <input type="submit"/><br>
+    </form>
 
-    <p id="addStock" onclick="addStock()">Add Stock</p>
+    <!-- <button id="test" onclick="test()">Test</button> -->
+    <!-- <script>
+        function test() {
+            
+            var symbol = document.getElementsByName("symbol")[0].value;
+            var qty = document.getElementsByName("qty")[0].value;
+            var tradePrice = document.getElementsByName("tradePrice")[0].value;
+            var openDate = document.getElementsByName("openDate")[0].value;
+            // if (tradePrice == null) {
+            //     tradePrice = yahooStockPrices.getCurrentData(symbol);
+            // }
+            document.write("Symbol: ", symbol);
+            document.write("<br>Quantiy: ", qty);
+            document.write("<br>Trade Price: ", tradePrice);
+            document.write("<br>Dated Opened: ", openDate);
+            
+            
+        }
+    </script>  -->
+
+    <!-- <p id="addStock" onclick="addStock()">Add Stock</p>
 
     <script>
         var name = "";
@@ -26,7 +53,7 @@
         name = prompt("Stock Name:","GME")
         shares = prompt("Number of shares:", "0");
         }
-    </script>
+    </script> -->
 
     <p id="blank"></p>
 
